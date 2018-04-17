@@ -57,9 +57,8 @@
     // 这里不需要通过views[0]的方式存取视图
     
     CGRect rect = _AxibView.frame;
-    rect.origin.x = 30.0f;
-    rect.origin.y = 80.0f + _xibView.frame.origin.y;
-    _xibView.frame = rect;
+    rect = CGRectMake(30, 160, UIScreen.mainScreen.bounds.size.width-60, 50);
+    _AxibView.frame = rect;
     [self.view addSubview:_AxibView];
 }
 -(void)loadViewFromBXIB
