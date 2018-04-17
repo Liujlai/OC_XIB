@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,117 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ial-rS-yHS">
+                                <rect key="frame" x="167" y="306" width="41" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="😼"/>
+                                <connections>
+                                    <segue destination="nsu-bW-3yK" kind="modal" modalTransitionStyle="crossDissolve" id="rnP-8a-jbO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ial-rS-yHS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GzA-EE-hVL"/>
+                            <constraint firstItem="ial-rS-yHS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="atV-48-Nyd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="142" y="106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7cK-Hv-nUX">
+            <objects>
+                <viewController storyboardIdentifier="AVC" id="nsu-bW-3yK" customClass="AViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HhA-IX-dlF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLe-hK-dSZ" customClass="LView">
+                                <rect key="frame" x="87.5" y="213.5" width="200" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df2-0L-hcE">
+                                        <rect key="frame" x="10" y="189" width="32" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="😺"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="flipHorizontal" id="jDf-We-cpk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAm-hl-HRj">
+                                        <rect key="frame" x="158" y="189" width="32" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="😿"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="modal" id="6lY-WL-kag"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpU-u2-38i">
+                                        <rect key="frame" x="10" y="10" width="180" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Cgc-Xd-F6l"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请点击下面俩个按钮返回前一页" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFq-Rp-c9V">
+                                        <rect key="frame" x="10" y="70" width="180" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.69598137839999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xFq-Rp-c9V" secondAttribute="trailing" constant="10" id="1jd-2d-F5i"/>
+                                    <constraint firstItem="xpU-u2-38i" firstAttribute="top" secondItem="gLe-hK-dSZ" secondAttribute="top" constant="10" id="7ys-em-nbm"/>
+                                    <constraint firstAttribute="trailing" secondItem="IAm-hl-HRj" secondAttribute="trailing" constant="10" id="D6m-ES-IMN"/>
+                                    <constraint firstItem="xFq-Rp-c9V" firstAttribute="leading" secondItem="gLe-hK-dSZ" secondAttribute="leading" constant="10" id="DnL-5B-S8O"/>
+                                    <constraint firstAttribute="bottom" secondItem="IAm-hl-HRj" secondAttribute="bottom" constant="5" id="Dus-Eg-VOY"/>
+                                    <constraint firstItem="xpU-u2-38i" firstAttribute="leading" secondItem="gLe-hK-dSZ" secondAttribute="leading" constant="10" id="TBd-oD-RHf"/>
+                                    <constraint firstAttribute="trailing" secondItem="xpU-u2-38i" secondAttribute="trailing" constant="10" id="XSR-qL-iH8"/>
+                                    <constraint firstAttribute="width" constant="200" id="aXI-Rp-MzE"/>
+                                    <constraint firstItem="xFq-Rp-c9V" firstAttribute="top" secondItem="xpU-u2-38i" secondAttribute="bottom" constant="40" id="elu-ew-5Iy"/>
+                                    <constraint firstAttribute="bottom" secondItem="df2-0L-hcE" secondAttribute="bottom" constant="5" id="pN7-8B-Cvx"/>
+                                    <constraint firstItem="df2-0L-hcE" firstAttribute="leading" secondItem="gLe-hK-dSZ" secondAttribute="leading" constant="10" id="tD0-V6-7YU"/>
+                                    <constraint firstAttribute="height" constant="240" id="uDe-w1-4yF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="0.826171875" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <constraints>
+                            <constraint firstItem="gLe-hK-dSZ" firstAttribute="centerX" secondItem="HhA-IX-dlF" secondAttribute="centerX" id="8JV-de-5uU"/>
+                            <constraint firstItem="gLe-hK-dSZ" firstAttribute="centerY" secondItem="HhA-IX-dlF" secondAttribute="centerY" id="L8f-0j-ZCb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fuE-kV-Li7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySj-wj-d11" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="106"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jDf-We-cpk"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -13,6 +13,13 @@
 		7869AE072085A002002C0DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7869AE062085A002002C0DDA /* Assets.xcassets */; };
 		7869AE0A2085A002002C0DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7869AE082085A002002C0DDA /* LaunchScreen.storyboard */; };
 		7869AE0D2085A002002C0DDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869AE0C2085A002002C0DDA /* main.m */; };
+		7869AE152085A796002C0DDA /* LView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869AE142085A796002C0DDA /* LView.m */; };
+		7869AE182085C298002C0DDA /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869AE172085C298002C0DDA /* AViewController.m */; };
+		7869AE1B2085C9A4002C0DDA /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869AE1A2085C9A4002C0DDA /* BViewController.m */; };
+		7869AE1D2085CBB2002C0DDA /* xibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7869AE1C2085CBB2002C0DDA /* xibView.xib */; };
+		7869AE1F2085CDB1002C0DDA /* AxibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7869AE1E2085CDB1002C0DDA /* AxibView.xib */; };
+		7869AE222085D3E0002C0DDA /* BxibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869AE212085D3E0002C0DDA /* BxibView.m */; };
+		7869AE242085D3F2002C0DDA /* BxibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7869AE232085D3F2002C0DDA /* BxibView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,17 @@
 		7869AE092085A002002C0DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7869AE0B2085A002002C0DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7869AE0C2085A002002C0DDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7869AE132085A796002C0DDA /* LView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LView.h; sourceTree = "<group>"; };
+		7869AE142085A796002C0DDA /* LView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LView.m; sourceTree = "<group>"; };
+		7869AE162085C298002C0DDA /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		7869AE172085C298002C0DDA /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		7869AE192085C9A4002C0DDA /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		7869AE1A2085C9A4002C0DDA /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		7869AE1C2085CBB2002C0DDA /* xibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = xibView.xib; sourceTree = "<group>"; };
+		7869AE1E2085CDB1002C0DDA /* AxibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AxibView.xib; sourceTree = "<group>"; };
+		7869AE202085D3E0002C0DDA /* BxibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BxibView.h; sourceTree = "<group>"; };
+		7869AE212085D3E0002C0DDA /* BxibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BxibView.m; sourceTree = "<group>"; };
+		7869AE232085D3F2002C0DDA /* BxibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BxibView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,17 @@
 				7869ADFE2085A000002C0DDA /* AppDelegate.m */,
 				7869AE002085A000002C0DDA /* ViewController.h */,
 				7869AE012085A000002C0DDA /* ViewController.m */,
+				7869AE162085C298002C0DDA /* AViewController.h */,
+				7869AE172085C298002C0DDA /* AViewController.m */,
+				7869AE192085C9A4002C0DDA /* BViewController.h */,
+				7869AE1A2085C9A4002C0DDA /* BViewController.m */,
+				7869AE1C2085CBB2002C0DDA /* xibView.xib */,
+				7869AE1E2085CDB1002C0DDA /* AxibView.xib */,
+				7869AE202085D3E0002C0DDA /* BxibView.h */,
+				7869AE212085D3E0002C0DDA /* BxibView.m */,
+				7869AE232085D3F2002C0DDA /* BxibView.xib */,
+				7869AE132085A796002C0DDA /* LView.h */,
+				7869AE142085A796002C0DDA /* LView.m */,
 				7869AE032085A000002C0DDA /* Main.storyboard */,
 				7869AE062085A002002C0DDA /* Assets.xcassets */,
 				7869AE082085A002002C0DDA /* LaunchScreen.storyboard */,
@@ -129,8 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7869AE0A2085A002002C0DDA /* LaunchScreen.storyboard in Resources */,
+				7869AE242085D3F2002C0DDA /* BxibView.xib in Resources */,
 				7869AE072085A002002C0DDA /* Assets.xcassets in Resources */,
+				7869AE1D2085CBB2002C0DDA /* xibView.xib in Resources */,
 				7869AE052085A000002C0DDA /* Main.storyboard in Resources */,
+				7869AE1F2085CDB1002C0DDA /* AxibView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7869AE022085A000002C0DDA /* ViewController.m in Sources */,
+				7869AE222085D3E0002C0DDA /* BxibView.m in Sources */,
+				7869AE1B2085C9A4002C0DDA /* BViewController.m in Sources */,
+				7869AE182085C298002C0DDA /* AViewController.m in Sources */,
+				7869AE152085A796002C0DDA /* LView.m in Sources */,
 				7869AE0D2085A002002C0DDA /* main.m in Sources */,
 				7869ADFF2085A000002C0DDA /* AppDelegate.m in Sources */,
 			);
