@@ -84,13 +84,8 @@
 				7869AE172085C298002C0DDA /* AViewController.m */,
 				7869AE192085C9A4002C0DDA /* BViewController.h */,
 				7869AE1A2085C9A4002C0DDA /* BViewController.m */,
-				7869AE1C2085CBB2002C0DDA /* xibView.xib */,
-				7869AE1E2085CDB1002C0DDA /* AxibView.xib */,
-				7869AE202085D3E0002C0DDA /* BxibView.h */,
-				7869AE212085D3E0002C0DDA /* BxibView.m */,
-				7869AE232085D3F2002C0DDA /* BxibView.xib */,
-				7869AE132085A796002C0DDA /* LView.h */,
-				7869AE142085A796002C0DDA /* LView.m */,
+				7869AE252085E330002C0DDA /* xib */,
+				7869AE262085E34B002C0DDA /* IB_DESIGNABLE */,
 				7869AE032085A000002C0DDA /* Main.storyboard */,
 				7869AE062085A002002C0DDA /* Assets.xcassets */,
 				7869AE082085A002002C0DDA /* LaunchScreen.storyboard */,
@@ -98,6 +93,27 @@
 				7869AE0C2085A002002C0DDA /* main.m */,
 			);
 			path = S;
+			sourceTree = "<group>";
+		};
+		7869AE252085E330002C0DDA /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				7869AE1C2085CBB2002C0DDA /* xibView.xib */,
+				7869AE1E2085CDB1002C0DDA /* AxibView.xib */,
+				7869AE202085D3E0002C0DDA /* BxibView.h */,
+				7869AE212085D3E0002C0DDA /* BxibView.m */,
+				7869AE232085D3F2002C0DDA /* BxibView.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		7869AE262085E34B002C0DDA /* IB_DESIGNABLE */ = {
+			isa = PBXGroup;
+			children = (
+				7869AE132085A796002C0DDA /* LView.h */,
+				7869AE142085A796002C0DDA /* LView.m */,
+			);
+			path = IB_DESIGNABLE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
