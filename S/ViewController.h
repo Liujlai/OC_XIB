@@ -11,5 +11,6 @@
 @interface ViewController : UIViewController
 
 
++ (BOOL)iPhoneX;
 @end
 

@@ -7,9 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "AdvertiseHelper.h"
+#import "TableViewController.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [TableViewController new];
+    [self.window makeKeyAndVisible];
+    #pragma mark - 设置广告
+    //广告页
+    NSArray <NSString *> *imagesURLS = @[@"http://img3.duitang.com/uploads/item/201411/12/20141112224314_GEuBE.gif", @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495189851096&di=224fad7f17468c2cc080221dd78a4abf&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201505%2F12%2F20150512124019_GPjEJ.gif"];
+    // 启动广告
+    [AdvertiseHelper showAdvertiserView:imagesURLS];
     return YES;
 }
 

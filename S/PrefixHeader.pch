@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  S
+//
+//  Created by idea on 2018/4/28.
+//  Copyright © 2018年 idea. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define KSCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define KSCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
+#define KSTATUSBARHEIGHT ([ViewController iPhoneX]?44.0:20.0)
+#define KNAVIGATIONANDSTATUSBARHEIGHT (KSTATUSBARHEIGHT+44.0)
+
+#import "ViewController.h"
+
+//存储数据
+#define DEFAULTS [NSUserDefaults standardUserDefaults]
+
+
+#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+
+//Appdelegate
+#define ShareApplicationDelegate [UIApplication sharedApplication].delegate
+
+//是否是空对象
+#define LMJIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+
+
+
+
+#endif /* PrefixHeader_pch */

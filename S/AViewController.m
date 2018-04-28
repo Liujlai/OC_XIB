@@ -8,6 +8,7 @@
 
 #import "AViewController.h"
 #import "BViewController.h"
+#import "TableViewController.h"
 
 @interface AViewController ()
 
@@ -22,7 +23,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
 //    [self dismissViewControllerAnimated:YES completion:nil];
-        BViewController *vc = [[BViewController alloc]init];
+        TableViewController *vc = [[TableViewController alloc]init];
         vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self presentViewController:vc animated:YES completion:nil];
 }
